@@ -1,0 +1,113 @@
+body {
+    font-family: sans-serif;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.top-bar .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.top-bar button {
+    background-color: #eee;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+th, td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.actions a {
+    background-color: #eee;
+    padding: 6px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.actions a:hover {
+    background-color: #cacacadf;
+}
+
+p.mensaje {
+    color: green;
+    font-weight: bold;
+}
+
+.top-bar .btn-primary {
+    background-color: #1a73e8;
+    color: white;
+}
+
+.top-bar .btn-volver {
+    color: #000;
+}
+
+.top-bar .btn-volver:hover {
+    background-color: #bdbbbbbb;
+}
+
+.top-bar .btn-primary:hover {
+    background-color: #165bb5;
+}
+
+.mensaje {
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mensaje.exito {
+    background-color: #e6f7e6;
+    border-left: 5px solid #4CAF50;
+    color: #2e7d32;
+}
+
+.mensaje.error {
+    background-color: #ffe0e0;
+    border-left: 5px solid #e53935;
+    color: #a00;
+}

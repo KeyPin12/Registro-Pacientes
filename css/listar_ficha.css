@@ -1,0 +1,152 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.top-bar .buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.buttons button {
+    background-color: #eee;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-volver{
+    color: #333;
+}
+
+.buttons .btn-primary {
+    background-color: #1a73e8;
+    color: white;
+}
+
+.buttons .btn-volver:hover {
+    background-color: #bdbbbbd0;
+}
+
+.buttons .btn-primary:hover {
+    background-color: #165bb5;
+}
+
+.search-bar {
+    margin: 20px 0;
+    display: flex;
+}
+
+.search-bar input {
+    flex: 1;
+    padding: 10px 20px;
+    border-radius: 8px 0 0 8px;
+    border: 1px solid #ccc;
+    border-right: none;
+}
+
+.search-bar input::placeholder{
+    color: #231616;
+}
+
+.search-bar button {
+    padding: 10px;
+    border-radius: 0 8px 8px 0;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    cursor: pointer;
+}
+
+.search-bar button:hover {
+    background-color: #ddd;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+th, td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+}
+
+th {
+    background-color: #f1f1f1;
+    font-weight: bold;
+}
+
+td:nth-child(3),
+td:nth-child(4),
+td:nth-child(5),
+td:nth-child(6) {
+    max-width: 250px;
+    word-wrap: break-word;
+    white-space: pre-line;
+    vertical-align: top;
+    line-height: 1.4;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+.actions a {
+    background-color: #eee;
+    padding: 6px 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.actions a:hover{
+    background-color: #cacacadf;
+}
+
+.mensaje {
+    padding: 12px;
+    border-radius: 6px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.mensaje.exito {
+    background-color: #e6f7e6;
+    border-left: 5px solid #4CAF50;
+    color: #2e7d32;
+}
+
+.mensaje.error {
+    background-color: #ffe0e0;
+    border-left: 5px solid #e53935;
+    color: #a00;
+}

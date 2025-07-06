@@ -1,0 +1,63 @@
+form {
+    max-width: 400px;
+    margin: 40px auto;
+    background-color: #fff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+form input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.2s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+form button[type="submit"] {
+    background-color: #d93025;
+    color: white;
+}
+
+form button[type="submit"]:hover {
+    background-color: #b1271b;
+}
+
+form .btn-volver {
+    margin-top: 10px;
+    background-color: #e0dfdf;
+    color: #333;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    transition: background-color 0.3s ease, box-shadow 0.2s ease;
+    display: inline-block;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+form .btn-volver:hover {
+    background-color: #e0e0e0;
+}
+

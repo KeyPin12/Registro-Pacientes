@@ -1,0 +1,74 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+h3 {
+    margin-top: 40px;
+    font-size: 20px;
+}
+
+.info-paciente {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+
+.card-consulta {
+    background-color: #ffffff;
+    border-left: 6px solid #1a73e8;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+.card-consulta p {
+    margin-bottom: 10px;
+    line-height: 1.5;
+}
+
+.card-consulta strong {
+    display: inline-block;
+    width: 130px;
+    font-weight: 600;
+    color: #444;
+}
+
+.card-consulta .fecha {
+    font-weight: bold;
+    color: #1a73e8;
+    margin-bottom: 15px;
+}
+
+.btn-volver {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 14px;
+    background-color: #eee;
+    color: black;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: normal;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-volver:hover{
+    background-color: #a9a7a7c8;
+}
