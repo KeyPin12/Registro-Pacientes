@@ -90,13 +90,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         </select>
 
         <label>Motivo de consulta:</label>
-        <textarea name="motivo" required></textarea>
+        <textarea name="motivo" value="<?= htmlspecialchars($motivo ?? '') ?>" required></textarea>
 
         <label>Diagnóstico:</label>
-        <textarea name="diagnostico" required></textarea>
+        <textarea name="diagnostico" value="<?= htmlspecialchars($diagnostico ?? '') ?>" required></textarea>
 
         <label>Tratamiento:</label>
-        <textarea name="tratamiento" required></textarea>
+        <textarea name="tratamiento" value="<?= htmlspecialchars($tratamiento ?? '') ?>" required></textarea>
 
         <button style="margin-top: 10px; border-radius: 10px;" type="submit">Guardar Consulta</button>
         <a href="../dashboard.php" class="btn-volver">← Volver</a>

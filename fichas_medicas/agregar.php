@@ -75,16 +75,16 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         </select>
 
         <label>Motivo:</label>
-        <textarea name="motivo" required></textarea>
+        <textarea name="motivo" value="<?= htmlspecialchars($motivo ?? '') ?>" required></textarea>
 
         <label>Diagnóstico:</label>
-        <textarea name="diagnostico" required></textarea>
+        <textarea name="diagnostico" value="<?= htmlspecialchars($diagnostico ?? '') ?>" required></textarea>
 
         <label>Tratamiento:</label>
-        <textarea name="tratamiento" required></textarea>
+        <textarea name="tratamiento" value="<?= htmlspecialchars($tratamiento ?? '') ?>" required></textarea>
 
         <label>Observaciones:</label>
-        <textarea name="observaciones"></textarea>
+        <textarea name="observaciones" value="<?= htmlspecialchars($observaciones ?? '') ?>"></textarea>
 
         <button type="submit">Guardar ficha</button>
         <a href="listar.php" class="btn-volver">← Volver</a>

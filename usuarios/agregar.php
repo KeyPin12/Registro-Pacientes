@@ -77,13 +77,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <form method="post">
         <label>Nombre de usuario:</label>
-        <input type="text" name="usuario" required>
+        <input type="text" name="usuario" value="<?= htmlspecialchars($usuario ?? '') ?>" required>
 
         <label>Contraseña:</label>
-        <input type="password" name="clave" required>
+        <input type="password" name="clave" value="<?= htmlspecialchars($clave ?? '') ?>" required>
 
         <label>Rol:</label>
-        <select name="rol" required>
+        <select name="rol" value="<?= htmlspecialchars($rol ?? '') ?>" required>
             <option value="admin">Administrador</option>
             <option value="medico">Médico</option>
             <option value="recepcionista">Recepcionista</option>

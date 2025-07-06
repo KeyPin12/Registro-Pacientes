@@ -103,13 +103,13 @@ $pacientes = $conn->query("SELECT id, nombre FROM pacientes ORDER BY nombre")->f
         </select>
 
         <label>Fecha:</label>
-        <input type="date" name="fecha" required>
+        <input type="date" name="fecha" value="<?= htmlspecialchars($fecha ?? '') ?>" required>
 
         <label>Hora:</label>
-        <input type="time" name="hora" required>
+        <input type="time" name="hora" value="<?= htmlspecialchars($hora ?? '') ?>" required>
 
         <label>Médico asignado:</label>
-        <input type="text" name="medico" required>
+        <input type="text" name="medico" value="<?= htmlspecialchars($medico ?? '') ?>" required>
 
         <button type="submit">Agendar</button>
         <a href="listar.php" class="btn-volver">← Volver</a>
