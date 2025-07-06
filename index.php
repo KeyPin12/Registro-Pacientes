@@ -72,7 +72,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     <script>
         setTimeout(() => {
-            const mensaje = document.querySelector('.mensaje');
+            const mensaje = document.querySelector('.error');
             if (mensaje) mensaje.style.display = 'none';
         }, 3000);
     </script>

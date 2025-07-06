@@ -35,10 +35,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     } else {
         $hora_valor = strtotime($hora);
         $inicio = strtotime("06:00");
-        $fin = strtotime("20:00");
+        $fin = strtotime("22:00");
 
         if ($hora_valor < $inicio || $hora_valor > $fin) {
-            $mensaje = "La cita debe estar entre 6:00 A:M y 8:00 P:M.";
+            $mensaje = "La cita debe estar entre 6:00 A:M y 10:00 P:M.";
             $error = true;
             $tipo_mensaje = 'error';
         }
@@ -96,7 +96,7 @@ $pacientes = $conn->query("SELECT id, nombre FROM pacientes ORDER BY nombre")->f
     <form method="post">
         <label>Paciente:</label>
         <select name="paciente_id" required>
-            <option value="">Seleccione</option>
+            <option value="<?= htmlspecialchars($paciente_id ?? '') ?>">Seleccione</option>
             <?php foreach ($pacientes as $p): ?>
                 <option value="<?= $p['id'] ?>"><?= $p['nombre'] ?></option>
             <?php endforeach; ?>
@@ -114,6 +114,13 @@ $pacientes = $conn->query("SELECT id, nombre FROM pacientes ORDER BY nombre")->f
         <button type="submit">Agendar</button>
         <a href="listar.php" class="btn-volver">← Volver</a>
     </form>
+
+    <script>
+        setTimeout(() => {
+            const mensaje = document.querySelector('.mensaje');
+            if (mensaje) mensaje.style.display = 'none';
+        }, 3000);
+    </script>
 
     <script>
         const TIEMPO_MAX_INACTIVIDAD = 15 * 60 * 1000;

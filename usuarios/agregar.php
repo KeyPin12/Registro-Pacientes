@@ -94,6 +94,13 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     </form>
 
     <script>
+        setTimeout(() => {
+            const mensaje = document.querySelector('.mensaje');
+            if (mensaje) mensaje.style.display = 'none';
+        }, 3000);
+    </script>
+
+    <script>
         const TIEMPO_MAX_INACTIVIDAD = 15 * 60 * 1000;
         let temporizador;
 
